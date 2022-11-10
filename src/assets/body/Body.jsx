@@ -1,3 +1,5 @@
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 import {
   Heading,
   Image,
@@ -9,9 +11,6 @@ import {
   Button,
   useMediaQuery,
 } from "@chakra-ui/react";
-
-import { init } from "ityped";
-import { useEffect, useRef } from "react";
 
 const introSection = {
   simpleGrid: {
@@ -61,9 +60,7 @@ export default function Body() {
       return `wide${isDisplayingInBrowser ? "Browser" : "Screen"}`;
     }
 
-    return isDisplayingInBrowser
-      ? "normalrowser"
-      : "rendering on something else, e.g. PWA";
+    return isDisplayingInBrowser ? "normalrowser" : "otherScreen";
   }
 
   useEffect(() => {
@@ -101,17 +98,24 @@ export default function Body() {
 
             <HStack>
               <Button colorScheme="blackAlpha">
-                <a href="https://github.com/alexamog/">Github</a>
+                <a href="https://github.com/alexamog/" target="_blank">
+                  Github
+                </a>
               </Button>
 
               <Button colorScheme="blackAlpha">
-                <a href="https://www.linkedin.com/in/alexander-amog/">
+                <a
+                  href="https://www.linkedin.com/in/alexander-amog/"
+                  target="_blank"
+                >
                   LinkedIn
                 </a>
               </Button>
 
               <Button colorScheme="blackAlpha">
-                <a href="mailto:alexamog@outlook.com">Email</a>
+                <a href="mailto:alexamog@outlook.com" target="_blank">
+                  Email
+                </a>
               </Button>
             </HStack>
           </VStack>
