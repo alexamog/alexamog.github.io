@@ -21,9 +21,6 @@ export default function Navbar() {
             <RouteLink to="/keebGallery">
               <Tab>Keyboard Gallery</Tab>
             </RouteLink>
-            <RouteLink to="/resume">
-              <Tab>Resume</Tab>
-            </RouteLink>
           </TabList>
         </Tabs>
       </HStack>

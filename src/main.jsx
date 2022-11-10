@@ -4,7 +4,7 @@ import ReactDOM from "react-dom/client";
 import "./main.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./assets/navbar/Navbar";
-import Body from "./assets/body/Body";
+import Body from "./assets/intro/Intro";
 import Experience from "./assets/experience/Experience";
 import Footer from "./assets/footer/Footer";
 

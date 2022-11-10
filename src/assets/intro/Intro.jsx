@@ -118,6 +118,11 @@ export default function Body() {
                 </a>
               </Button>
             </HStack>
+            <Button colorScheme="blackAlpha">
+              <a href="./src/assets/resume/alexamog-resume.pdf" target="_blank">
+                Resume
+              </a>
+            </Button>
           </VStack>
         </Box>
       </SimpleGrid>
