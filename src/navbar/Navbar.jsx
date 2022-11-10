@@ -5,8 +5,11 @@ import {
   Tabs,
   Tab,
 } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 
 export default function Navbar() {
+  const [isLargerThan800] = useMediaQuery("(min-width: 800px)");
+
   return (
     <div
       style={{
