@@ -1,4 +1,4 @@
-import "./main.css";
+import "../public/main.css";
 import React from "react";
 
 import { ChakraProvider } from "@chakra-ui/react";

@@ -1,4 +1,4 @@
-import "./projectStyle.css";
+import "../public/projectStyle.css";
 import {
   Button,
   Heading,
