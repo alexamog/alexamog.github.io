@@ -18,6 +18,9 @@ export default function Navbar() {
             <RouteLink to="/experience">
               <Tab>Work Experience</Tab>
             </RouteLink>
+            <RouteLink to="/projects">
+              <Tab>Projects</Tab>
+            </RouteLink>
             <RouteLink to="/keebGallery">
               <Tab>Keyboard Gallery</Tab>
             </RouteLink>

@@ -1,5 +1,6 @@
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+// import { createUseStyles } from "react-jss";
 import {
   Heading,
   Image,
@@ -12,10 +13,19 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 
+// const useStyles = createUseStyles({
+//   simpleGrid: {
+//     coloumns: 2,
+//     m: "1.3rem 30.8rem 0 30.8rem",
+//     w: "700px",
+//   },
+// });
+
 const introSection = {
   simpleGrid: {
     columns: 2,
-    m: "1.3rem 30.8rem 0 30.8rem",
+    m: "1.3rem 30.8rem 1.3rem 30.8rem",
+    w: "700px",
   },
   image: {
     borderRadius: "full",
@@ -25,7 +35,6 @@ const introSection = {
   },
   boxImage: {
     h: "300px",
-    w: "500px",
   },
 };
 
@@ -35,13 +44,13 @@ const aboutMeSection = {
     studying Information Technology. Currently, I am working as a Software
     Engineer at ESDC Government of Canada.`,
 
-    bottomDesc: ` I am a big keyboard enthusiast and I love to build keyboards. I have
+    bottomDesc: `I am a big keyboard enthusiast and I love to build keyboards. I have
     built over 10 keyboards and I am always looking to build more. I am
     also a big fan of mechanical keyboards and I have a collection of over
     20 keyboards.`,
   },
   box: {
-    m: "1.3rem 31.8rem 0 30.8rem",
+    m: "1.3rem 31.8rem 0 31.8rem",
   },
   textTag: {
     mt: "1rem",
@@ -67,7 +76,7 @@ export default function Body() {
     init(title.current, {
       showCursor: true,
       backDelay: 350,
-      strings: ["Software Engineer", "Student", "Keyboard Enthusiast"],
+      strings: ["Software Developer", "Student", "Keyboard Enthusiast"],
     });
   }, []);
 
@@ -84,7 +93,7 @@ export default function Body() {
           <Image {...introSection.image} />
         </Box>
 
-        <Box>
+        <Box w="300px">
           <VStack align="left">
             <Heading as="h2" fontSize="3rem">
               Hey there!
